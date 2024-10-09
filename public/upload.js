@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function displayFiles() {
-    fetch('https://telugumemesbackend-v2-render-service.onrender.com/files')
+    fetch('https://telugumemesbackend-v2-render-service.onrender.com/api/videos')
     .then(response => response.json())
     .then(files => {
       const fileList = document.getElementById('file-list');
